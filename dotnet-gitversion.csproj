@@ -3,18 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp1.0</TargetFramework>
     <DebugType>portable</DebugType>
-    <AssemblyName>dotnet-gitversion</AssemblyName>
+    <AssemblyName>dotnet-gitversion-csproj</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>dotnet-gitversion</PackageId>
+    <PackageId>dotnet-gitversion-csproj</PackageId>
     <PackageTargetFallback>$(PackageTargetFallback);dotnet</PackageTargetFallback>
-    <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
-    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionPrefix>1.0.0</VersionPrefix>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="GitVersionCore-dotnet" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-  </ItemGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">
-    <PackageReference Include="System.Diagnostics.TraceSource" Version="4.0.0" />
-  </ItemGroup>
+  </ItemGroup>  
 </Project>
