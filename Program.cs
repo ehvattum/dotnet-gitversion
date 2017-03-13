@@ -26,7 +26,9 @@ namespace DotNetGitversionMSBuild
             }
             Console.WriteLine($"Setting version: {version.NuGetVersion}");
             XDocument doc = XDocument.Load(file);
-            var propertyGroup = doc.Descendants("PropertyGroup").SingleOrDefault();
+            var propertyGroup = doc.Descendants("PropertyGroup").FirstOrDefault();
+            if(propertyGroup == null)
+                Console.WriteLine("No propertygroup found");
             var versionAttribute = propertyGroup.Descendants("VersionPrefix").SingleOrDefault() as XElement;
             if (versionAttribute != null)
                 versionAttribute.SetValue(version.NuGetVersion);
