@@ -5,7 +5,7 @@ using System.Xml.Linq;
 using GitVersion;
 using GitVersion.Helpers;
 
-namespace ConsoleApplication
+namespace DotNetGitversionMSBuild
 {
     public class Program
     {
