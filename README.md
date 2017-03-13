@@ -1,7 +1,7 @@
-msbuild-dotnet-gitversion - Simple git versioning for dotnet cli
+dotnet-msbuild-gitversion - Simple git versioning for dotnet cli
 ========================================================
 
-**msbuild-dotnet-gitversion** is a simple tool for stamping the `VersionPrefix` element in the dotnet core .csproj projects, using [GitVersion](https://github.com/GitTools/GitVersion) for generating the version number.
+**dotnet-msbuild-gitversion** is a simple tool for stamping the `VersionPrefix` element in the dotnet core .csproj projects, using [GitVersion](https://github.com/GitTools/GitVersion) for generating the version number.
 
 I have not bothered to create a proper integration at this point.
 
